@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const check = (a)=>{
+            if (typeof a !== 'number' || isNaN(a)){
+                console.log(`${a} khong phai so`);
+            }else if(a % 2===0){
+                console.log(`${a} la so chan`);
+            }else{
+                console.log(`${a} la so le`);
+            }
+        }
+        check("abc");
+        check(5);
+        check(10);
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const ouput=(arr)=>{
+            const chuoi=[];
+            for (let str of arr){
+                let key =str.split('').sort().join('');
+                // tach - sap xep - gop
+                if(!chuoi[key]){
+                    chuoi[key]=[];
+                }
+                chuoi[key].push(str);
+            }
+            return chuoi;
+        }
+        const input= ["eat","tea", "tan", "ate", "nat", "bat"];
+        const result= ouput(input);
+        console.log(result);
+    </script>
+</body>
+</html>
