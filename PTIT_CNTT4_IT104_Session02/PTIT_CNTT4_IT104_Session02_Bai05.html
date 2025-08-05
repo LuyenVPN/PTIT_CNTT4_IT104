@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let phoneBooks = [];
+        function addContact(name, phone, email) {
+            let contact = {
+                name: name,
+                phone: phone,
+                email: email
+            }
+            phoneBooks.push(contact);
+            
+        }
+        function displayContact(){
+            for (let contact of phoneBooks){
+                console.log(`${contact.name} - ${contact.phone} - ${contact.email}`);
+            }
+        }
+        addContact("Abc","0987654321","abc@gmail.com");
+        console.log(displayContact());
+    </script>
+</body>
+
+</html>
