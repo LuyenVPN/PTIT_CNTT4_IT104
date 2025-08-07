@@ -1,4 +1,4 @@
-function processInput(input: string | number | boolean): void {
+function processInput(input: string | number | boolean){
     if (typeof input === "string") {
         const digitOnly = [...input].filter(char => char >= '0' && char <= '9').join('');
         if (digitOnly.length === input.length) {
@@ -31,3 +31,4 @@ processInput(7)
 processInput(10)
 processInput(true)
 processInput(false)
+
