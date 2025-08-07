@@ -23,7 +23,7 @@ function calculateOrderTotal(order: Order): number {
     }
     return total;
 }
-function printOrder(order: Order): void {
+function printOrder(order: Order) {
     console.log(`Đơn hàng: #${order.orderId}`);
     console.log(`Khách hàng: ${order.customerName}`);
     console.log("Sản phẩm:");
@@ -54,3 +54,4 @@ const order: Order = {
 };
 
 printOrder(order);
+
