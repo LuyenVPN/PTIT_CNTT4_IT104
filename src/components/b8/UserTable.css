@@ -1,0 +1,68 @@
+.user-table-wrapper {
+  margin: 20px;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid #eef0f3;
+  background: #fbfdff;
+  box-shadow: 0 1px 4px #eee;
+}
+.user-table {
+  border-collapse: separate;
+  border-spacing: 0;
+  width: 100%;
+  background: #fbfdff;
+}
+
+.user-table th, .user-table td {
+  padding: 18px 16px;
+  font-size: 18px;
+  text-align: left;
+  color: #8a94a6;
+  background: #fbfdff;
+  border: none;
+}
+
+.user-table th {
+  background: #f5f8fa;
+  font-weight: 600;
+}
+
+.user-table td {
+  color: #344356;
+  font-size: 17px;
+  background: #fff;
+}
+
+.user-table tr:not(:last-child) td {
+  border-bottom: 1px solid #eef0f3;
+}
+
+.btn-edit {
+  padding: 6px 18px;
+  border-radius: 5px;
+  border: 1px solid #e2e3e8;
+  background: #fff;
+  color: #555;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 4px;
+  transition: background .15s;
+}
+.btn-edit:hover {
+  background: #f1f4f8;
+}
+
+.btn-delete {
+  padding: 6px 18px;
+  border-radius: 5px;
+  border: none;
+  background: #ed4245;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background .15s;
+}
+.btn-delete:hover {
+  background: #ce2e31;
+}
